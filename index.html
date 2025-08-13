@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+               <img src=" " class="logo"> 
+                <ul id="sidemenu" >
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                         
+                    <i class="  fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                     <i class=" fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FullStack Developer</p>
+                <h1>Hi,I'm <span>Aniket</span> Tiwari </h1>
+            </div>
+        </div>
+     </div>
+
+     <!------------------About---------------->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about1.avif" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="subtitle">About Me</h1>
+                    <P>Hi, I'm Aniket Tiwari, a passionate and dedicated B.Tech CSE (AI) student from Ballia, Uttar Pradesh. 
+                        I have a strong interest in software development and enjoy building real-world projects that solve meaningful problems.
+                         I specialize in Java, HTML, CSS, JavaScript, and I’m currently exploring Spring Boot for backend development.
+
+I’ve developed several projects, including a fully responsive Amazon clone using HTML and CSS, 
+and a Face Recognition System using PCA, which showcases my problem-solving skills 
+and eagerness to learn new technologies. I’m also familiar with version control tools like Git, GitHub, and use VS Code as my primary development environment.
+
+As a quick learner and a detail-oriented individual, I strive to write clean,
+ maintainable code and continuously improve my skills. My goal is to contribute to
+  innovative tech solutions and grow as a full-stack developer.</P>
+
+  <div class="tab-title">
+    <P class="tab-links active-link" onclick="opentab('Skills')">Skills</P>
+    <P class="tab-links"onclick="opentab('Experience/Projects')">Experience/Projects</P>
+    <P class="tab-links"onclick="opentab('Education')">Education</P>
+  </div>
+  <div class="tab-contents active-tab" id="Skills">
+    <ul>
+        <li> <span>UI/UX</span> <br>Designing Web/App Interface </li>
+        <li> <span>Web development</span><br> Web app Development </li>
+        <li> <span>App development</span><br> Building Android/IOS apps </li>
+
+        
+    </ul>
+  </div>
+  <div class="tab-contents"id="Experience/Projects">
+    <ul>
+        <li> <span> June 2025-Current</span> <br>Frontend Developer at Cloudcredits Technology pvt ltd.</li>
+        <li> <span>July 2024-Sep 2024</span><br> Machine learning intern at Internship studio </li>
+        <li> <span>Face Recognition Model</span><br> Build a Face recognition model using PCA ,Matplotlib ,SKlearn </li>
+        <li> <span>E-commerce website</span><br> Developed colne of Amazon's website </li>
+        <li> <span>Games</span><br> Build games like Tic Tac Toe and Rock Paper Scissors </li>
+        <li> <span>Hotel Management System</span><br> Build hotel Management system by using java</li>
+        
+         
+    </ul>
+  </div>
+  <div class="tab-contents"id="Education">
+    <ul>
+        <li> <span>B.Tech (2022-26)</span> <br>Computer Science Engineering with Specilization in AI/ML</li>
+         
+
+        
+    </ul>
+  </div>
+                </div>
+            </div>
+        </div>
+     </div>
+  <!------------------Services---------------->
+
+     <div id="Services">
+        <div class="container">
+            <h1 class ="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create clean, responsive, and user-friendly websites tailored to your needs.
+                         From landing pages to full business sites, I focus on modern design, mobile optimization,
+                         fast performance, and a great user experience.
+                          Let's build a site that stands out and supports your goals.</p>
+                          <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I craft intuitive and visually appealing user interfaces that deliver seamless user experiences. 
+                        My design process focuses on user needs, usability, and modern aesthetics to ensure your
+                         app or website is both functional and engaging.
+                         From wireframes to polished designs, I help bring your digital vision to life.</p>
+                          <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>Backend Development</h2>
+                    <p>I offer robust and scalable backend development services to power your web or mobile applications.
+                         From designing APIs to integrating databases and ensuring secure data flow, I build reliable server-side logic 
+                         using technologies like Java, Spring Boot, and SQL. My focus is on performance,
+                         security, and clean code architecture to support smooth, efficient operations behind the scenes.</p>
+                          <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+       <!------------------Portfolio---------------->
+
+       <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Amazon website clone</h3>
+                        <p>A fully responsive Amazon web clone built using HTML and CSS, 
+                            replicating the layout and design of the original site.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                     <div class="layer">
+                        <h3>Tic Tac Toe game</h3>
+                        <p>A simple and interactive Tic Tac Toe game built using JavaScript, HTML, and CSS.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpeg">
+                     <div class="layer">
+                        <h3>Hotel Management System</h3>
+                        <p>A comprehensive Hotel Management System developed to handle bookings.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+       </div>
+       <!----------------contact------------------------>
+
+       <div id="contact">
+        <div class="container">
+<div class="row">
+    <div class="contact-left">
+        <h1 class="subtitle">Contact Me</h1>
+        <p> <i class="fa-solid fa-paper-plane"></i>tiwarianiket605@gmail.com</p>
+        <p> <i class="fa-solid fa-phone"></i>7307939550</p>
+        <div class="social-icon">
+            <a href="https://www.linkedin.com/in/aniket-tiwari-426448252/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Aniket2790"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/ani20279"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <a href="images/my-cv (2).pdf" download="" class="btn btn2" >Download CV</a>
+    </div>
+    <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+       <span id="msg"></span> 
+    </div>
+</div>
+        </div>
+        <div class="copyright">
+            <p> copyright &copy;Aniket. Made with <i class="fa-solid fa-heart"></i> by Aniket</p>
+        </div>
+       </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+             for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz_04I2JvEyihk6YYUyDUULySThYSak4RPJ-IBIynMfrcnN4hSO-0qjOIyS92Ta_-nl/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>  {
+        msg.innerHTML="Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML =""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
